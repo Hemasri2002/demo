@@ -9,7 +9,7 @@
             
             
             
-            p {
+            #para {
               font-family: verdana;
               font-size: 20px;
             }
@@ -25,6 +25,10 @@
             <label for="lname">Last Name :</label>
             <input type="text" id="lname" name="Last Name" Placeholder="Enter your Last Name.." required>
             <br><br>
+            <label for="reg">Register Number :</label>
+            <input type="text" id="reg" name="Register Number" Placeholder="Enter your register number.." required>
+            <br><br>
+            
             <label for="email">Email Id :</label>
             <input type="email" id="email" name="email" Placeholder="Enter your mail id.." required>
             <br><br>
@@ -33,7 +37,14 @@
             <br><br>
             <label for="date of birth">Date of Birth :</label>
             <input type="date" id="Date of Birth" name="Date of Birth"  required>
-            <br><br>
+            <br>
+            <P>Gender</P>
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">female</label>
+            <input type="radio" id="other" name="gender" value="Other">
+            <label for="other">Other</label><br><br>
             <label for="year">Select your year of study :</label>
             <select name="year" id="year"  required>
                 <option  value="y2">First</option>
@@ -47,14 +58,24 @@
                 <option  value="2">odd</option>
             </select>
             <br><br>
-            <p>Number of Backlogs</p>
+            <label for="branch">Choose your Specialisation:</label>
+            <select name="specialisation" id="branch" required>
+                <option value="b1">CSE</option>
+                <option value="b2">ECE</option>
+                <option value="b3">MECH</option>
+                <option value="b4">CIVIL</option>
+                <option value="b5">EEE</option>
+                <option value="b6">IT</option>
+                
+            </select>
+            <p id="para">Number of Backlogs</p>
             <input type="radio" name="number" value="0-2" id="option-1">
             <label for="option-1">0-2</label><br><br>
             <input type="radio" name="number" value="2-5" id="option-2">
             <label for="option-2">2-5</label><br><br>
             <input type="radio" name="number" value="5+" id="option-3">
             <label for="option-3">5+</label><br><br>
-            <h3>select your program electives</h3>
+            <h3>Select your program electives if you are a III B.Tech Student</h3>
             <h4><em>Program Elective 1</em></h4><br>
             <input type="checkbox" name="subject" value="ADSP" id="option-1">
             <label for="option-1"> Advanced DigitL Signal Processing</label><br><br>
@@ -69,7 +90,7 @@
             <label for="choice-2">Digital design through verilog VHDL</label><br><br>
             <input type="checkbox" name="subject" value="DIP" id="choice-3">
             <label for="choice-3">Digital image processing</label><br><br>
-            <p><b><h3>certifications interested in :</h3></b></p>
+            <p><b><h3>Certifications interested in :</h3></b></p>
             <input type="radio" name="interest" value="Front End" id="select1">
             <label for="select1">Front End</label><br><br>
             <input type="radio" name="interest1" value="Cloud" id="select2">
