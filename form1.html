@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My first from</title>
+       <link rel="Stylesheet" href="style.css">
+    </head>
+    <body  >
+        <h1  align="center"><strong>Registration Form</strong></h1>
+        <hr width="50%" height="20px" color="red" align="center"><br>
+        <form>
+            <label for="fname">First Name :</label>
+            <input type="text" id="fname" name="First Name" Placeholder="Enter your First Name.." required>
+            <br><br>
+            <label for="lname">Last Name :</label>
+            <input type="text" id="lname" name="Last Name" Placeholder="Enter your Last Name.." required>
+            <br><br>
+            <label for="email">Email Id :</label>
+            <input type="email" id="email" name="email" Placeholder="Enter your mail id.." required>
+            <br><br>
+            <label for="mobile">Mobile Number :</label>
+            <input type="text" id="mobile" name="mobile nmber" Placeholder="Enter your mobile number.." required>
+            <br><br>
+            <label for="date of birth">Date of Birth :</label>
+            <input type="date" id="Date of Birth" name="Date of Birth"  required>
+            <br><br>
+            <label for="year">Select your year of study :</label>
+            <select name="year" id="year"  required>
+                <option  value="y2">First</option>
+                <option  value="y3">Second</option>
+                <option  value="y4">Third</option>
+                <option  value="y5">Fourth</option>
+            </select><br><br>
+            <label for="sem">Select your semester :</label>
+            <select name="sem" id="sem"  required>
+                <option  value="1">even</option>
+                <option  value="2">odd</option>
+            </select>
+            <br><br>
+            <p>Number of Backlogs</p>
+            <input type="radio" name="number" value="0-2" id="option-1">
+            <label for="option-1">0-2</label><br><br>
+            <input type="radio" name="number" value="2-5" id="option-2">
+            <label for="option-2">2-5</label><br><br>
+            <input type="radio" name="number" value="5+" id="option-3">
+            <label for="option-3">5+</label><br><br>
+            <h3>select your program electives</h3>
+            <h4><em>Program Elective 1</em></h4><br>
+            <input type="checkbox" name="subject" value="ADSP" id="option-1">
+            <label for="option-1"> Advanced DigitL Signal Processing</label><br><br>
+            <input type="checkbox" name="subject" value="AWP" id="option-2">
+            <label for="option-2">Antenna and Wave Propogation</label><br><br>
+            <input type="checkbox" name="subject" value="CVD" id="option-3">
+            <label for="option-3">CMOS and VLSI design</label><br><br>
+            <h4><em>Program Elective 2</em></h4><br>
+            <input type="checkbox" name="subject" value="MWT" id="choice-1">
+            <label for="choice-1"> Microwave Theory and Technologies</label><br><br>
+            <input type="checkbox" name="subject" value="VHDL" id="choice-2">
+            <label for="choice-2">Digital design through verilog VHDL</label><br><br>
+            <input type="checkbox" name="subject" value="DIP" id="choice-3">
+            <label for="choice-3">Digital image processing</label><br><br>
+            <p><b><h3>certifications interested in :</h3></b></p>
+            <input type="radio" name="interest" value="Front End" id="select1">
+            <label for="select1">Front End</label><br><br>
+            <input type="radio" name="interest1" value="Cloud" id="select2">
+            <label for="select2">Cloud</label><br><br>
+            <input type="radio" name="interest2" value="Image Processing" id="select3">
+            <label for="select3">Image processing</label><br><br>
+            <input type="submit" vlaue="Submit your response"  >
+            <input type="reset" vlaue="Reset" >
+
+        </form>
+    </body>
+</html>
